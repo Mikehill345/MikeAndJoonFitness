@@ -32,16 +32,6 @@ header nav{
 header nav a{
    margin:6% 3%;
 }
-.big-picture{
-   display:flex;
-   align-items:center;
-   margin:2%;
-}
-.big-picture img{
-    width:80%;
-   height:auto;
-   margin:0 auto;
-}
 nav{
     display:flex;
     justify-content:space-around;
@@ -60,30 +50,44 @@ a{
 a:hover{
     color:blueviolet;
 }
-.statement a{
+h2{
+    display:flex;
+    justify-content: center;
+}
+.button{
+    display:flex;
+    justify-content: center;
+}
+.button a{
     border:1px solid black;
     border-radius:2rem;
     background-color:#701818;
     padding: 1%;
     transition:2s;
 }
-.statement a:hover{
+.button a:hover{
     background-color:black;
 
 }
+
 .statement{
     display:flex;
-    flex-flow:column;
-    align-items:center;
+    justify-content: space-evenly;
+    padding: 2%;
 }
 .statement p{
      width:60%;
     text-align:center;
-    margin:2%;
+    margin:0  auto;
 }
 footer{
     margin:2%;
     background-color:#701818;
+}
+.statement img{
+    display:flex;
+    justify-content: space-evenly;
+    margin:2% 0 0 13%;
 }
 
 @media (max-width: 500px){
@@ -105,6 +109,14 @@ header nav a{
 header div{
     text-align:center;
 }
+.statement{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.statement img{
+    margin: 0 auto;
+}
 }
 
 @media(max-width:300px){
@@ -115,6 +127,8 @@ header div{
         margin:1%;
     }
     .statement{
+        display:flex;
+        flex-direction:column;
         text-align:center;
     }
     .statement p{

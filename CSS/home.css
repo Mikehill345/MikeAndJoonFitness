@@ -99,12 +99,8 @@ header nav a{
     margin:0 auto;
 }
 .big-picture img{
-    width:80%;
+    width:90%;
     height: auto;
-}
-header div{
-    text-align:center;
-}
 }
 
 @media(max-width:300px){
