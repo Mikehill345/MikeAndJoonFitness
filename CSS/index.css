@@ -102,7 +102,10 @@ header nav a{
     width:90%;
     height: auto;
 }
-
+header div{
+    margin:0 auto;
+ }
+}
 @media(max-width:300px){
     header nav{
         display:flex;
@@ -126,5 +129,7 @@ header nav a{
         width:100%;
         height: auto;
     }
-}
+    header div{
+        margin:0 auto;
+     }
 }
