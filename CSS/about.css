@@ -24,7 +24,7 @@ body{
 header{
     display:flex;
     justify-content:space-evenly;
-    background-color:orangered;
+    background-color:#701818;
 }
 header nav{
    margin:2%;
@@ -58,13 +58,18 @@ a{
     color:rgb(255, 246, 246);
 }
 a:hover{
-    color:yellow;
+    color:blueviolet;
 }
 .statement a{
     border:1px solid black;
     border-radius:2rem;
-    background-color:orangered;
+    background-color:#701818;
     padding: 1%;
+    transition:2s;
+}
+.statement a:hover{
+    background-color:black;
+
 }
 .statement{
     display:flex;
@@ -78,7 +83,7 @@ a:hover{
 }
 footer{
     margin:2%;
-    background-color:orangered;
+    background-color:#701818;
 }
 
 @media (max-width: 500px){
@@ -96,6 +101,9 @@ header nav a{
 .big-picture img{
     width:100%;
     height:auto;
+}
+header div{
+    text-align:center;
 }
 }
 
