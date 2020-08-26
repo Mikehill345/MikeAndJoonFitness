@@ -144,4 +144,7 @@ header div{
         width:100%;
         height: auto;
     }
+    header div{
+       margin:0 auto;
+    }
 }
