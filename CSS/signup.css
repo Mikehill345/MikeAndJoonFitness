@@ -108,7 +108,7 @@ header div {
   padding-top: 1%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #wrapper img {
     width: 60%;
   }
