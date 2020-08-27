@@ -19,7 +19,11 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0.8% 0;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 0.6%;
+  background: #ff9233;
+  z-index: 999999;
 }
 
 header h2 {
@@ -27,8 +31,8 @@ header h2 {
   font-family: 'Abril Fatface', sans-serif;
   letter-spacing: 0.1rem;
   text-align: center;
-  width: 40%;
-  margin-left: 2%;
+  width: 32%;
+  margin-left: 1%;
 }
 
 header nav {
@@ -48,15 +52,14 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ff9233;
+  color: whitesmoke;
   transform: scale(1.1);
 }
 
 /* banners */
 #banner {
-  text-align: center;
-  background: #ff9233;
-  padding: .7% 0;
+  display: flex;
+  align-items: center;
 }
 
 #banner div {
@@ -65,7 +68,7 @@ header nav a:hover {
 
 #banner-search {
   letter-spacing: 0.4rem;
-  padding: 2% 0;
+  padding: 7% 0 2% 0;
   text-align: center;
 }
 
@@ -172,9 +175,17 @@ footer div {
 }
 
 @media (max-width: 1024px) {
+  header {
+    justify-content: space-evenly;
+  }
+
   header h2 {
     font-size: 2.5rem;
     width: 30%;
+  }
+
+  #banner {
+    display: none;
   }
 
   #banner-search h1 {
@@ -187,7 +198,7 @@ footer div {
     justify-content: center;
   }
 
-  header h2 {
+  header h2, #banner {
     display: none;
   }
 
@@ -214,12 +225,13 @@ footer div {
 }
 
 @media (max-width: 500px) {
-  header {
-    margin: 2% 0;
+
+  #banner, #banner-search {
+    display: none;
   }
 
-  #banner-search {
-    display: none;
+  form {
+    padding-top: 4%;
   }
 
   #banner div {
